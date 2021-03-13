@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/r1_splash"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wel">
+    <!--显示版本号-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="16dp"
+        android:text="Welcome to MisLab"
+        android:textSize="35sp" />
+
+    <TextView
+        android:text="版本号："
+        android:textStyle="bold|italic"
+        android:textSize="28sp"
+        android:textColor="#A4A4A4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="48dp"
+        android:layout_marginEnd="48dp"
+        android:id="@+id/tv_splash_version"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <!--显示进度条-->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="50sp"
+        android:layout_below="@+id/tv_splash_version"
+        android:layout_marginTop="256dp"
+        android:max="100"
+        android:progress="50" />
+</RelativeLayout>
